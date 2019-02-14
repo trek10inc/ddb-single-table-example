@@ -34,6 +34,10 @@ def setup():
             'AttributeType': 'S'
             }
         ],
+        ProvisionedThroughput={
+            'ReadCapacityUnits': 5,
+            'WriteCapacityUnits': 5
+        },
         GlobalSecondaryIndexes=[
         {
             'IndexName': 'gsi_1',
@@ -49,10 +53,13 @@ def setup():
                     ],
                     'Projection': {
                         'ProjectionType': 'ALL'
+                    },
+                    'ProvisionedThroughput': {
+                        'ReadCapacityUnits': 5,
+                        'WriteCapacityUnits': 5
                     }
             },
-        ],
-        BillingMode='PAY_PER_REQUEST'
+        ]
     )
     print("waiting 60 seconds for table to create...")
     time.sleep(60)
