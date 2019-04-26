@@ -136,7 +136,7 @@ def build_adjacency_lists(categories, customers, employees, orders, order_detail
     adjacency_lists += build_node_list(customers, "customerID", "contactName", "country#region#city#address", )
     adjacency_lists += build_node_list(shippers, "shipperID", "companyName", "phone")
     adjacency_lists += build_node_list(suppliers, "supplierID", "SUPPLIER", "country#region#city#address", )
-    adjacency_lists += build_node_list(employees, "reportsTo", "employeeID", "hireDate")
+    adjacency_lists += build_node_list(employees, "employeeID", "reportsTo", "hireDate")
     adjacency_lists += build_node_list(orders, "orderID", "ORDER", "orderDate")
     adjacency_lists += build_node_list(products, "productID", "PRODUCT", "discontinued")
     adjacency_lists += build_node_list(order_details, "orderID", "productID", "unitPrice")
