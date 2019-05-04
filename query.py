@@ -22,7 +22,7 @@ response = table.query(IndexName='gsi_1',KeyConditionExpression=Key('sk').eq('pr
 print(response['Items'])
 
 # e. Get the most recent 25 orders
-response = table.query(IndexName='gsi_1',KeyConditionExpression=Key('sk').eq('ORDER'), Limit=25)
+response = table.query(IndexName='gsi_1',KeyConditionExpression=Key('sk').eq('ORDER'), Limit=25, ScanIndexForward=False)
 print(response['Items'])
 
 # f. Get shippers by name
