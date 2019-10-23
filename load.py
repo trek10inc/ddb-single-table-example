@@ -104,9 +104,11 @@ def load_csvs():
         row["supplierID"] = "suppliers#"+row["supplierID"]
         row["categoryID"] = "categories#"+row["categoryID"]
     for row in orders:
+        row["orderID"] = "orders#"+row["orderID"]
         row["employeeID"] = "employees#"+row["employeeID"]
         row["shipVia"] = "shippers#"+row["shipVia"]
     for row in order_details:
+        row["orderID"] = "orders#"+row["orderID"]
         row["productID"] = "products#"+row["productID"]
     for row in employees:
         row["employeeID"] = "employees#"+row["employeeID"]
