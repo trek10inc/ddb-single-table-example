@@ -1,6 +1,6 @@
 # DynamoDB Single Table Example
 
-The code in this repository uses the Northwind dataset to demonstrate simple relational modeling in a single DynamoDB table. For a full walkthrough of the underlying rationale, see [the accompanying blog post](https://staging.trek10.com/blog/dynamodb-single-table-relational-modeling/).
+The code in this repository uses the Northwind dataset to demonstrate simple relational modeling in a single DynamoDB table. For a full walkthrough of the underlying rationale, see [the accompanying blog post](https://trek10.com/blog/dynamodb-single-table-relational-modeling/).
 
 ## Using the code
 Run `python load.py --setup` with valid AWS credentials in your environment to perform the following actions:
